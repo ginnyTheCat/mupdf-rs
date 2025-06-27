@@ -102,7 +102,7 @@ jobs:
 
       - run: cargo test --features serde
         env:
-          LIBCLANG_PATH: /mingw32/bin
+          LIBCLANG_PATH: /${{matrix.sys}}/bin
           CARGO_TERM_COLOR: always
 
   asan:
