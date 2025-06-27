@@ -97,6 +97,7 @@ jobs:
       - name: Download tesseract training data
         run: curl -LO https://github.com/tesseract-ocr/tessdata/raw/main/eng.traineddata
 
+      - run: echo "$PATH"
       - run: rustc --version --verbose
       - run: clang --version
 
