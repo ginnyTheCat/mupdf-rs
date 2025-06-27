@@ -98,6 +98,8 @@ jobs:
         run: curl -LO https://github.com/tesseract-ocr/tessdata/raw/main/eng.traineddata
 
       - run: rustc --version --verbose
+      - run: clang --version
+
       - run: cargo test --features serde
         env:
           CARGO_TERM_COLOR: always
